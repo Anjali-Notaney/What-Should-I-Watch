@@ -1,0 +1,71 @@
+.friendIconClass{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+#sidebarWrapper{
+    position: absolute;
+    background-color: #172023;
+    height:100%;
+    width: 60px;  
+}
+
+#sidebarVisibleWrapper{
+    position: absolute;
+    top:60px;
+    height:100%;
+    width: 60px;    
+    padding: 0px;
+}
+
+#profileImageWrapper{
+    display: inline;
+    position: absolute;
+    height: 45px;
+    width: 45px;
+    transition: transform, 0.2s; 
+}
+
+#profileImageWrapper:hover{
+    transform: scale(1.2);
+}
+
+#profileImageWrapper:hover + #profileNameWrapper{ 
+    opacity: 0.8;
+}
+#profileImageWrapper:hover > #profileNameText{ 
+    opacity: 0.5;
+}
+
+
+#profileObjectWrapper{
+    position: relative;
+    margin-top:10px;
+    left: 8px;
+    height: 45px;
+    width: 200px;
+    padding: 0px;
+}
+
+#profileNameWrapper{
+    position: relative;
+    opacity: 0;
+    display: inline;
+    left: 60px;
+    top: 15px;
+    padding-top:2px;
+    font-family: 'Amiko', sans-serif;
+    background-color: white;
+    border-radius: 6px; 
+    transition: opacity 0.2s;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 15px;
+}
+
+
+#profileNameText{
+    color:black;
+}
