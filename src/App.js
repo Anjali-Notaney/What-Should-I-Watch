@@ -8,6 +8,7 @@ function App() {
   return (
     <div id="appWrapper">
       <Sidebar/>
+      <label for="male">Male</label>
     </div>
   );
 }
